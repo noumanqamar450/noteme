@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Me</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+</head>
+
+<body>
+    <!-- Menu -->
+    <div class="menu">
+        <div class="logo">
+            <img src="./assets/images/logo-w.png" alt="Note Me">
+        </div>
+        <div class="nav">
+            <ul id="signupbtn">
+                <li>
+                    <a href="#" id="login">Login</a>
+                </li>
+                <li>
+                    <a href="#" id="signup">Sign Up</a>
+                </li>
+            </ul>
+            <ul id="logoutbtn">
+                <li>
+                    <a href="#" onclick="createnote()" class="craetenote">Create Note</a>
+                </li>
+                <li>
+                    <a href="#" id="logout">Log Out</a>
+                </li>
+            </ul>
+        </div>
+        <div class=" collapse" id="collapse">
+            <div class="line">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Note Me  Home Page -->
+    <div class="container">
+        <div class="home">
+            <div class="text">
+                <img src="./assets/images/logo-b.png" alt="Note Me">
+                <h2>Create Your Own Note</h2>
+                <p>Before creating a note, Please Sign Up or Login</p>
+                <p>Design and Develop ♥ by <b>Nouman Qamar</b></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Note Me - Note Section -->
+    <div class="note">
+        <span id="closex">X</span>
+        <div class="notepad notefrom">
+            <form action="">
+                <div id="notepaduser"></div>
+                <input type="hidden" id="user">
+                <label for="title">Add Title</label>
+                <input type="text" id="title" placeholder="Title">
+                <label for="note">Add Note</label>
+                <textarea id="note" placeholder="Note"></textarea>
+                <div class="btn">
+                    <button onclick="noteCreate(event)">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container notepad-area">
+        <button class="forsmalldevice" onclick="createnote()">Create Note</button>
+        <div class="notedisplay">
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Note Me - Login -->
+    <div class="overlay">
+        <span id="close">X</span>
+        <div class="container">
+            <div class="login">
+                <h3>Login</h3>
+                <hr>
+                <form action="" id="loginform">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" placeholder="Password">
+                    <button>Login</button>
+                </form>
+            </div>
+            <div class="signup">
+                <form action="" id="signupform">
+                    <h3>Sign Up</h3>
+                    <hr>
+                    <label for="username">Username</label>
+                    <input type="text" id="susername" placeholder="Username">
+                    <label for="email">Email</label>
+                    <input type="email" id="semail" placeholder="Email">
+                    <label for="pass">Password</label>
+                    <input type="password" id="spass" placeholder="Password">
+                    <label for="re-pass">Re-password</label>
+                    <input type="password" id="sre-pass" placeholder="Re-password">
+                    <button>Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/app.js"></script>
+
+</html>
